@@ -1,0 +1,108 @@
+student@T9:~$ cd ajce
+student@T9:~/ajce$ ls -a > f1.txt
+student@T9:~/ajce$ ls -a > f1.txt
+student@T9:~/ajce$ wc -l < users
+bash: users: No such file or directory
+student@T9:~/ajce$ ls 
+anju       f1.txt  f3.txt       h1.txt  k2.txt~  mca  s2
+f1111.odt  f2.txt  fnew.tar.gz  k2.txt  m1.txt   s1   S4
+student@T9:~/ajce$ ls -a > s1
+student@T9:~/ajce$ cat s1
+.
+..
+anju
+f1111.odt
+f1.txt
+f2.txt
+f3.txt
+fnew.tar.gz
+h1.txt
+k2.txt
+k2.txt~
+m1.txt
+mca
+s1
+s2
+S4
+student@T9:~/ajce$ ^C
+student@T9:~/ajce$ wc -l < users
+bash: users: No such file or directory
+student@T9:~/ajce$ wc -l  f1.txt
+16 f1.txt
+student@T9:~/ajce$ wc -l < f1.txt
+16
+student@T9:~/ajce$ cat f1.txt
+.
+..
+anju
+f1111.odt
+f1.txt
+f2.txt
+f3.txt
+fnew.tar.gz
+h1.txt
+k2.txt
+k2.txt~
+m1.txt
+mca
+s1
+s2
+S4
+student@T9:~/ajce$ cat s1 |mor
+
+Command 'mor' not found, did you mean:
+
+  command 'moar' from deb moarvm
+  command 'vor' from deb vor
+  command 'mlr' from deb miller
+  command 'tor' from deb tor
+  command 'more' from deb util-linux
+  command 'mod' from deb monodoc-base
+  command 'mon' from deb mon
+  command 'sor' from deb pccts
+  command 'mtr' from deb mtr-tiny
+  command 'mtr' from deb mtr
+  command 'moc' from deb qtchooser
+  command 'oor' from deb openoverlayrouter
+  command 'mord' from deb scotch
+  command 'mog' from deb mazeofgalious
+  command 'mr' from deb myrepos
+
+Try: apt install <deb name>
+
+student@T9:~/ajce$ cat m1
+cat: m1: No such file or directory
+student@T9:~/ajce$ cat > m1
+ffv
+122
+fff
+3444
+fg
+44
+qqq
+
+rgrts
+gdg
+^C
+student@T9:~/ajce$ ls -l | wc
+     16     137     822
+student@T9:~/ajce$ ls -l m1
+-rw-r--r-- 1 student student 38 Mar 14 15:20 m1
+student@T9:~/ajce$ chmod 754 m1
+student@T9:~/ajce$ la -l m1
+-rwxr-xr-- 1 student student 38 Mar 14 15:20 m1
+student@T9:~/ajce$ chmod 111 m1
+student@T9:~/ajce$ la -l m1
+---x--x--x 1 student student 38 Mar 14 15:20 m1
+student@T9:~/ajce$ cat m1
+cat: m1: Permission denied
+student@T9:~/ajce$ chmod u=r,g=r,o=r m1
+student@T9:~/ajce$ ls -l m1
+-r--r--r-- 1 student student 38 Mar 14 15:20 m1
+student@T9:~/ajce$ ls -l m1
+-r--r--r-- 1 student student 38 Mar 14 15:20 m1
+student@T9:~/ajce$ chmod 111 m1
+student@T9:~/ajce$ ls -l m1
+---x--x--x 1 student student 38 Mar 14 15:20 m1
+student@T9:~/ajce$ 
+

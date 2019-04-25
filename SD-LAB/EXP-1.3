@@ -1,0 +1,233 @@
+student@S15:~$ echo WELLCOME
+WELLCOME
+student@S15:~$ read wellcome
+hai anju
+student@S15:~$ cd mca
+bash: cd: mca: No such file or directory
+student@S15:~$ cd ajce
+student@S15:~/ajce$ cd anju
+bash: cd: anju: No such file or directory
+student@S15:~/ajce$ cd mca
+student@S15:~/ajce/mca$ mkdir anju
+student@S15:~/ajce/mca$ mkdir lmca
+student@S15:~/ajce/mca$ mkdir rmca
+student@S15:~/ajce/mca$ pwd
+/home/student/ajce/mca
+student@S15:~/ajce/mca$ ld
+ld: no input files
+student@S15:~/ajce/mca$ ls
+anju  lmca  rmca
+student@S15:~/ajce/mca$ cd /
+student@S15:/$ cat f1
+cat: f1: No such file or directory
+student@S15:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@S15:/$ pwd
+/
+student@S15:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@S15:/$ cd ..
+student@S15:/$ cd ~
+student@S15:~$ cd ajce
+student@S15:~/ajce$ cat f1
+cat: f1: No such file or directory
+student@S15:~/ajce$ cat mca
+cat: mca: Is a directory
+student@S15:~/ajce$ touch f1
+student@S15:~/ajce$ touch f2
+student@S15:~/ajce$ touch f3
+student@S15:~/ajce$ cat >f1
+fgdxgf
+2446
+
+gjj
+dgtry6tuj
+675r769
+fbghy76ujhu7h
+^C
+student@S15:~/ajce$ cat >f2
+5544584g
+5555
+54588554
+15154
+44871
+^C
+student@S15:~/ajce$ cat > f3 
+ghjtijoy
+56556556
+4844lkoik
+55985hghft5
+jiplop5459
+^C
+student@S15:~/ajce$ cat  f1 f2
+fgdxgf
+2446
+
+gjj
+dgtry6tuj
+675r769
+fbghy76ujhu7h
+5544584g
+5555
+54588554
+15154
+44871
+student@S15:~/ajce$ cat * f1 f2 
+fgdxgf
+2446
+
+gjj
+dgtry6tuj
+675r769
+fbghy76ujhu7h
+5544584g
+5555
+54588554
+15154
+44871
+ghjtijoy
+56556556
+4844lkoik
+55985hghft5
+jiplop5459
+cat: mca: Is a directory
+fgdxgf
+2446
+
+gjj
+dgtry6tuj
+675r769
+fbghy76ujhu7h
+5544584g
+5555
+54588554
+15154
+44871
+student@S15:~/ajce$ cat f1 > f4.txt
+student@S15:~/ajce$ cat f4.txt
+fgdxgf
+2446
+
+gjj
+dgtry6tuj
+675r769
+fbghy76ujhu7h
+student@S15:~/ajce$ cat >f6
+asdfgh
+^C
+student@S15:~/ajce$ cat > f5
+123654^C
+student@S15:~/ajce$ cat f6 >> f5
+student@S15:~/ajce$ cat f5
+asdfgh
+student@S15:~/ajce$  cat -n f1
+     1	fgdxgf
+     2	2446
+     3	
+     4	gjj
+     5	dgtry6tuj
+     6	675r769
+     7	fbghy76ujhu7h
+student@S15:~/ajce$ cat -e f3 
+ghjtijoy$
+56556556$
+4844lkoik$
+55985hghft5$
+jiplop5459$
+student@S15:~/ajce$ mv f6 mca
+student@S15:~/ajce$ mv btc mca
+mv: cannot stat 'btc': No such file or directory
+student@S15:~/ajce$ mv -b f2
+mv: missing destination file operand after 'f2'
+Try 'mv --help' for more information.
+student@S15:~/ajce$ cat > f8
+1
+23
+
+4
+5
+7
+^C
+student@S15:~/ajce$ mv -b f8
+mv: missing destination file operand after 'f8'
+Try 'mv --help' for more information.
+student@S15:~/ajce$ cat -b f8
+     1	1
+     2	23
+
+     3	4
+     4	5
+     5	7
+student@S15:~/ajce$ ls f8 f3
+f3  f8
+student@S15:~/ajce$ cat > f10
+try
+jhkkk	
+	mjkjk
+lkok	j
+	lkj
+^C
+student@S15:~/ajce$ cat -T f10
+try
+jhkkk^I
+^Imjkjk
+lkok^Ij
+^Ilkj
+student@S15:~/ajce$ mv -u f10
+mv: missing destination file operand after 'f10'
+Try 'mv --help' for more information.
+student@S15:~/ajce$ cat > f11.txt
+qwerty   
+asdfgh
+zxcvb
+^C
+student@S15:~/ajce$ mv -u --
+mv: missing file operand
+Try 'mv --help' for more information.
+student@S15:~/ajce$ mv -u
+mv: missing file operand
+Try 'mv --help' for more information.
+student@S15:~/ajce$ mv -u f11
+mv: missing destination file operand after 'f11'
+Try 'mv --help' for more information.
+student@S15:~/ajce$ mv -u f10 mca
+student@S15:~/ajce$ mu -u f8 mca
+
+Command 'mu' not found, but can be installed with:
+
+apt install maildir-utils
+Please ask your administrator.
+
+student@S15:~/ajce$ mv -u f8 mca
+student@S15:~/ajce$ 
+student@S15:~/ajce$ cd mca
+student@S15:~/ajce/mca$ cat > t5
+bhhfbdfbgh
+jbghhfug
+hguh
+^C
+student@S15:~/ajce/mca$ cd /
+student@S15:/$ cd ajce
+bash: cd: ajce: No such file or directory
+student@S15:/$ cd ~
+student@S15:~$ cd ajce
+student@S15:~/ajce$ mv -u f5 mca
+student@S15:~/ajce$ cd mca
+student@S15:~/ajce/mca$ mv -u f6 ajce
+student@S15:~/ajce/mca$ mv -u f10 ajce
+student@S15:~/ajce/mca$ mv -u f8 ajce
+student@S15:~/ajce/mca$ mv -u f5 ajce
+student@S15:~/ajce/mca$ cd lmca
+student@S15:~/ajce/mca/lmca$ cat > s1
+bhgyhdfbg
+ghyghghj
+hhutg
+^C
+student@S15:~/ajce/mca/lmca$ cat > s2
+fjghujhnuj
+gjhhguhujr
+bjhtujhb
+^C
+student@S15:~/ajce/mca/lmca$ mv -u s1 mca
+student@S15:~/ajce/mca/lmca$ 
+

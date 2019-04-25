@@ -1,0 +1,114 @@
+student@T9:~$ cat ajce
+cat: ajce: No such file or directory
+student@T9:~$ mkdir ajce
+student@T9:~$ cd /
+student@T9:/$ cd ..
+student@T9:/$ cd ~
+student@T9:~$ cd ajce
+student@T9:~/ajce$ mkdir mca
+student@T9:~/ajce$ mkdir anju
+student@T9:~/ajce$ cd mca
+student@T9:~/ajce/mca$ mkdir lmca
+student@T9:~/ajce/mca$ mkdir rmca
+student@T9:~/ajce/mca$ mkdir intmca
+student@T9:~/ajce/mca$ cd ..
+student@T9:~/ajce$ cd anju
+student@T9:~/ajce/anju$ mkdir a
+student@T9:~/ajce/anju$ mkdir b
+student@T9:~/ajce/anju$ mkdir c
+student@T9:~/ajce/anju$ cd ..
+student@T9:~/ajce$ cat f1.txt
+cat: f1.txt: No such file or directory
+student@T9:~/ajce$ cat > f1.txt
+hhghjg
+8676
+hyhh55
+445jjo
+5454
+^C
+student@T9:~/ajce$ cat > f2.txt
+7878mko
+ii5j525o
+uyuyhu4556
+hg556
+iji55
+^C
+student@T9:~/ajce$ cat > f3.txt
+asdfghjk
+789456
+jjkjj
+12524
+nhh
+58
+h
+^C
+student@T9:~/ajce$ cd mca
+student@T9:~/ajce/mca$ cat > a1.txt
+hffjekwj5hhh
+gdeydh845
+hhuhu5
+4565jjm
+qwetyuio
+4755655
+12345678
+1896j
+^C
+student@T9:~/ajce/mca$ 
+student@T9:~/ajce/mca$ cat > b1.txt
+qazwsx
+753951
+ecrfv852
+852963
+^C
+student@T9:~/ajce/mca$ cp a1.txt  b1.txt
+student@T9:~/ajce/mca$ cat > c1.txt
+^C
+student@T9:~/ajce/mca$ cp a1.txt  c1.txt
+student@T9:~/ajce/mca$ cd ..
+student@T9:~/ajce$ mkdir S4
+student@T9:~/ajce$ cp -r S4 mca
+student@T9:~/ajce$ ls
+anju  f1.txt  f2.txt  f3.txt  mca  S4
+student@T9:~/ajce$ cat > k2.txt
+1236
+789
+1565
+455
+88
+398
+^C
+student@T9:~/ajce$ cp -i b1.txt k2.txt
+cp: cannot stat 'b1.txt': No such file or directory
+student@T9:~/ajce$ cp -i f3.txt k2.txt
+cp: overwrite 'k2.txt'?                 
+student@T9:~/ajce$ cp -i f3.txt k2.txt
+cp: overwrite 'k2.txt'? n
+student@T9:~/ajce$ cp f1.txt k2.txt
+student@T9:~/ajce$ cp -b  f1.txt k2.txt
+student@T9:~/ajce$ ls -a
+.  ..  anju  f1.txt  f2.txt  f3.txt  k2.txt  k2.txt~  mca  S4
+student@T9:~/ajce$ cp -l f2.txt S4
+student@T9:~/ajce$ cp -p f2.txt f1.txt
+student@T9:~/ajce$ cp -p f3.txt k2.txt
+student@T9:~/ajce$ mkdir h1.txt
+student@T9:~/ajce$ cat > m1.txt
+^C
+student@T9:~/ajce$ cp -f f1.txt m1.txt
+student@T9:~/ajce$ man cp
+student@T9:~/ajce$ cp --attribute only f1.txt m1.txt
+cp: target 'm1.txt' is not a directory
+student@T9:~/ajce$ cp --attribute only mca S4
+cp: cannot stat 'only': No such file or directory
+cp: -r not specified; omitting directory 'mca'
+student@T9:~/ajce$ man cp
+student@T9:~/ajce$ cp --attribute-only mca S4
+cp: unrecognized option '--attribute-only'
+Try 'cp --help' for more information.
+student@T9:~/ajce$ cp --attribute-only f1.txt S4
+cp: unrecognized option '--attribute-only'
+Try 'cp --help' for more information.
+student@T9:~/ajce$ ls
+anju  f1.txt  f2.txt  f3.txt  h1.txt  k2.txt  k2.txt~  m1.txt  mca  S4
+student@T9:~/ajce$ cp --attributes-only f1.txt mca
+student@T9:~/ajce$ 
+

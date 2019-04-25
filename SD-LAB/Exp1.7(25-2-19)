@@ -1,0 +1,246 @@
+student@T9:~$ head s1
+head: cannot open 's1' for reading: No such file or directory
+student@T9:~$ cd ajce
+student@T9:~/ajce$ head s1
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T9:~/ajce$ head s2
+flower
+rose
+jasmin
+lili
+sunflower
+allium
+amaryllis
+anemone
+aster
+astilbe
+student@T9:~/ajce$ head -15 s1
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+student@T9:~/ajce$ head  s1 s2
+==> s1 <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+==> s2 <==
+flower
+rose
+jasmin
+lili
+sunflower
+allium
+amaryllis
+anemone
+aster
+astilbe
+student@T9:~/ajce$ head -n s1
+head: invalid number of lines: ‘s1’
+student@T9:~/ajce$ head -n 6 s1
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+student@T9:~/ajce$ head -n 16 s1
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+Jharkhand
+Karnataka
+Kerala
+Madhya Pradesh
+Maharashtra
+Manipur
+student@T9:~/ajce$ head -c 16 s1
+Andhra Pradesh
+Astudent@T9:~/ajce$ head -c 6 s1
+Andhrastudent@T9:~/ajce$ 
+student@T9:~/ajce$ head -v s1
+==> s1 <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T9:~/ajce$ head -v s1 s2
+==> s1 <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+
+==> s2 <==
+flower
+rose
+jasmin
+lili
+sunflower
+allium
+amaryllis
+anemone
+aster
+astilbe
+student@T9:~/ajce$ tail s1
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T9:~/ajce$ tail -n 4  s1
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T9:~/ajce$ tail +25  s1
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T9:~/ajce$ tail -c 4  s1
+gal
+student@T9:~/ajce$ tail -v  s1
+==> s1 <==
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+student@T9:~/ajce$ head -c 6 s1
+Andhrastudent@T9:~/ajce$ head -c 7 s1
+Andhra student@T9:~/ajce$ head -c 8 s1
+Andhra Pstudent@T9:~/ajce$ head -c 9 s1
+Andhra Prstudent@T9:~/ajce$ head -c 5 s1
+Andhrstudent@T9:~/ajce$ head -v s1 
+==> s1 <==
+Andhra Pradesh
+Arunachal Pradesh
+Assam
+Bihar
+Chhattisgarh
+Goa
+Gujarat
+Haryana
+Himachal Pradesh
+Jammu and Kashmir
+student@T9:~/ajce$ head -v s2 
+==> s2 <==
+flower
+rose
+jasmin
+lili
+sunflower
+allium
+amaryllis
+anemone
+aster
+astilbe
+student@T9:~/ajce$ tail -q  s1 s2
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+flower
+rose
+jasmin
+lili
+sunflower
+allium
+amaryllis
+anemone
+aster
+astilbe
+student@T9:~/ajce$ tail -f  s1 s2
+==> s1 <==
+Odisha
+Punjab
+Rajasthan
+Sikkim
+Tamil Nadu
+Telangana
+Tripura
+Uttar Pradesh
+Uttarakhand
+West Bengal
+
+==> s2 <==
+flower
+rose
+jasmin
+lili
+sunflower
+allium
+amaryllis
+anemone
+aster
+astilbe
+dfffff
+uyki
+2q^C
+student@T9:~/ajce$ 
+

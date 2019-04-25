@@ -1,0 +1,30 @@
+
+client
+
+student@S8:~/socket$ javac clientecho.java
+student@S8:~/socket$ java clientecho
+ Enter text..
+ if client 'quit' type  exit
+hii
+Server said : hii
+Enter text 
+hello
+Server said : hello
+Enter text 
+
+
+
+server
+
+
+student@S8:~/socket$ gedit serverecho.java
+student@S8:~/socket$ gedit clientecho.java
+student@S8:~/socket$ javac serverecho.java
+student@S8:~/socket$ java serverecho
+Server is running...
+connection establised
+server send echo to client 
+hii
+server send echo to client 
+
+

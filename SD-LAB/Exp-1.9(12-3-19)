@@ -1,0 +1,207 @@
+android@T9:~$ expr 12+8
+12+8
+android@T9:~$ expr 12 + 8
+20
+android@T9:~$ expr 12 \ * 2
+expr: syntax error
+android@T9:~$ expr 12 \* 2
+24
+android@T9:~$ expr 15 \* 2
+30
+android@T9:~$ expr 12 + 12
+24
+android@T9:~$ echo "Enter two numbers"
+Enter two numbers
+android@T9:~$ read x
+read y^C
+android@T9:~$ sum='expr $x + $y'
+android@T9:~$ sum=`expr $x + $y`
+expr: syntax error
+android@T9:~$ echo "Enter two numbers"
+Enter two numbers
+android@T9:~$ read x
+read y      
+android@T9:~$ sum=`expr $x + $y`
+expr: syntax error
+android@T9:~$ sum1=`expr $x + $y`
+expr: syntax error
+android@T9:~$ echo "enter two number"
+enter two number
+android@T9:~$ read x
+10    
+android@T9:~$ read y
+20
+android@T9:~$ sum=`expr $x + $y`
+android@T9:~$ echo "Sum= $sum"
+Sum= 30
+android@T9:~$ echo "enter four numbers"
+enter four numbers
+android@T9:~$ read a
+10
+android@T9:~$ read b
+20
+android@T9:~$ read c
+30
+android@T9:~$ read d
+40
+android@T9:~$ result=`expr $a + $b + $c + $d`
+android@T9:~$ echo "Sum= $result"
+Sum= 100
+android@T9:~$ y=10
+android@T9:~$ y=`expr $y+1`
+android@T9:~$ echo $y
+10+1
+android@T9:~$ echo $y
+10+1
+android@T9:~$ 10
+10: command not found
+android@T9:~$ read y
+10
+android@T9:~$ y=`expr $y + 1`
+android@T9:~$ echo $y
+11
+android@T9:~$ read z
+1000
+android@T9:~$ z=`expr $z + 5`
+android@T9:~$ echo z
+z
+android@T9:~$ echo $z
+1005
+android@T9:~$ echo "enter 2 no"
+enter 2 no
+android@T9:~$ read a
+10
+android@T9:~$ read b
+50
+android@T9:~$ sum=`expr $a + $b`
+android@T9:~$ sum=`expr $a - $b`
+android@T9:~$ echo "Sum= $sum"
+Sum= -40
+android@T9:~$ echo "enter 2 no"
+enter 2 no
+android@T9:~$ read a
+40
+android@T9:~$ read b
+10    
+android@T9:~$ result=`expr $a - $b`
+android@T9:~$ echo "Result= $result"
+Result= 30
+android@T9:~$ echo "enter 2 no"
+enter 2 no
+android@T9:~$ read a
+90           
+android@T9:~$ read b
+2
+android@T9:~$ result=`expr $a * $b`
+expr: syntax error
+android@T9:~$ result=`expr $a / $b`
+android@T9:~$ echo "Result= $result"
+Result= 45
+android@T9:~$ expr --version
+expr (GNU coreutils) 8.28
+Copyright (C) 2017 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+
+Written by Mike Parker, James Youngman, and Paul Eggert.
+android@T9:~$ expr --help
+Usage: expr EXPRESSION
+  or:  expr OPTION
+
+      --help     display this help and exit
+      --version  output version information and exit
+
+Print the value of EXPRESSION to standard output.  A blank line below
+separates increasing precedence groups.  EXPRESSION may be:
+
+  ARG1 | ARG2       ARG1 if it is neither null nor 0, otherwise ARG2
+
+  ARG1 & ARG2       ARG1 if neither argument is null or 0, otherwise 0
+
+  ARG1 < ARG2       ARG1 is less than ARG2
+  ARG1 <= ARG2      ARG1 is less than or equal to ARG2
+  ARG1 = ARG2       ARG1 is equal to ARG2
+  ARG1 != ARG2      ARG1 is unequal to ARG2
+  ARG1 >= ARG2      ARG1 is greater than or equal to ARG2
+  ARG1 > ARG2       ARG1 is greater than ARG2
+
+  ARG1 + ARG2       arithmetic sum of ARG1 and ARG2
+  ARG1 - ARG2       arithmetic difference of ARG1 and ARG2
+
+  ARG1 * ARG2       arithmetic product of ARG1 and ARG2
+  ARG1 / ARG2       arithmetic quotient of ARG1 divided by ARG2
+  ARG1 % ARG2       arithmetic remainder of ARG1 divided by ARG2
+
+  STRING : REGEXP   anchored pattern match of REGEXP in STRING
+
+  match STRING REGEXP        same as STRING : REGEXP
+  substr STRING POS LENGTH   substring of STRING, POS counted from 1
+  index STRING CHARS         index in STRING where any CHARS is found, or 0
+  length STRING              length of STRING
+  + TOKEN                    interpret TOKEN as a string, even if it is a
+                               keyword like 'match' or an operator like '/'
+
+  ( EXPRESSION )             value of EXPRESSION
+
+Beware that many operators need to be escaped or quoted for shells.
+Comparisons are arithmetic if both ARGs are numbers, else lexicographical.
+Pattern matches return the string matched between \( and \) or null; if
+\( and \) are not used, they return the number of characters matched or 0.
+
+Exit status is 0 if EXPRESSION is neither null nor 0, 1 if EXPRESSION is null
+or 0, 2 if EXPRESSION is syntactically invalid, and 3 if an error occurred.
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/expr>
+or available locally via: info '(coreutils) expr invocation'
+android@T9:~$ expr geeks: geek
+expr: syntax error
+android@T9:~$ expr geeks
+geeks
+android@T9:~$ expr geeks : geek
+4
+android@T9:~$ expr length "geeks" "<" 5 "|" 19 - 6 ">" 10
+1
+android@T9:~$ expr length "eavidepoyi" "<" 5 "|" 19 - 6 ">" 10
+1
+android@T9:~$ expr length "eavi" "<" 4 "|" 19 - 6 ">" 10
+1
+android@T9:~$ expr length "eavi" "<" 4 "|" 16 - 7 ">" 9
+0
+android@T9:~$ expr length "eavi" "<" 4 "|" 16 - 7 ">" 7
+1
+android@T9:~$ expr length "eavi huulk" "<" 4 "|" 16 - 7 ">" 7
+1
+android@T9:~$ x= eavidepoyii
+eavidepoyii: command not found
+android@T9:~$ x= eavidepoyii
+eavidepoyii: command not found
+android@T9:~$ x=eavidepoyii
+android@T9:~$ sub= `expr substr $x 5  6 7 8 9 10`
+expr: syntax error
+android@T9:~$ sub= `expr substr $x 5 6 7 8 9 10`
+expr: syntax error
+android@T9:~$ sub= `expr substr $x 5 6 `
+depoyi: command not found
+android@T9:~$ x=qwerty
+android@T9:~$ sub=`expr substr $x 2 4`
+android@T9:~$ echo $sub
+wert
+android@T9:~$ x=eavidepoyii
+android@T9:~$ sub=`expr substr $x 2 6`
+android@T9:~$ echo $sub
+avidep
+android@T9:~$ x=eavidepoyii
+android@T9:~$ sub= `expr substr $x 5 10`
+depoyii: command not found
+android@T9:~$ sub= `expr substr $x 5 7`
+depoyii: command not found
+android@T9:~$ sub= expr substr $x 5 7`
+> 
+> ^C
+android@T9:~$ sub=`expr substr $x 5 7`
+android@T9:~$ echo $sub
+depoyii
+android@T9:~$ 
+

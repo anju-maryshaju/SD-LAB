@@ -1,0 +1,76 @@
+student@T9:~$ echo a
+a
+student@T9:~$ echo ANJU MARIA JOSEPH
+ANJU MARIA JOSEPH
+student@T9:~$ read a
+6
+student@T9:~$ echo $a
+6
+student@T9:~$ read sum
+324
+student@T9:~$ echo $sum
+324
+student@T9:~$ man echo
+student@T9:~$ man read
+student@T9:~$ echo -e"anju\n maria\n anju"
+-eanju\n maria\n anju
+student@T9:~$ echo -e "anju\n maria\n anju"
+anju
+ maria
+ anju
+student@T9:~$ echo -e "anju\b maria\b anju"
+anj mari anju
+student@T9:~$ echo -e "anju\bmaria"
+anjmaria
+student@T9:~$ echo -e "anju\cmaria"
+anjustudent@T9:~$ echo -e "\aAnjumaria"
+Anjumaria
+student@T9:~$ echo -e hello
+hello
+student@T9:~$ read echo
+tfg 
+student@T9:~$ echo read
+read
+student@T9:~$ echo -e"\v hai rowdi baby"
+-e\v hai rowdi baby
+student@T9:~$ echo -e "\v hai rowdi baby"
+
+ hai rowdi baby
+student@T9:~$ echo -e "\vhairowdibaby"
+
+hairowdibaby
+student@T9:~$ read -p "enter yiur name:"
+enter yiur name:ANJU
+student@T9:~$ echo "my name is $reply"
+my name is 
+student@T9:~$ echo "my name is $REPLY"
+my name is ANJU
+student@T9:~$ read -p "enter yiur name:"a
+enter yiur name:a        
+student@T9:~$ echo "my name is $a"
+my name is 6
+student@T9:~$ read a,b
+bash: read: `a,b': not a valid identifier
+student@T9:~$ read A B
+23 45
+student@T9:~$ echo A B
+A B
+student@T9:~$ echo $A $B
+23 45
+student@T9:~$ man echo
+student@T9:~$ man -p
+man: option requires an argument -- 'p'
+Try 'man --help' or 'man --usage' for more information.
+student@T9:~$ man read
+student@T9:~$ 
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,357 @@
+student@T9:~$ cd AJCE
+student@T9:~/AJCE$ cat myfile
+ HELLO WORLD
+student@T9:~/AJCE$ cat > myfile1
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+^C
+student@T9:~/AJCE$ cat myfile1.txt
+cat: myfile1.txt: No such file or directory
+student@T9:~/AJCE$ cat myfile1
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat > myfile
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+^C
+student@T9:~/AJCE$ cat myfile
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+student@T9:~/AJCE$ cat myfile1
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat *
+cat: MCA: Is a directory
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat myfile myfile1
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat -n myfile
+     1	Anju Maria Joseph
+     2	Puthiyedath
+     3	Kodenchery
+student@T9:~/AJCE$ cat -n myfile1
+     1	WELLCOME!!!
+     2	qwerty qwerty qwerty
+     3	abcdefgh
+     4	12345
+student@T9:~/AJCE$ cat myfile > myfile2
+student@T9:~/AJCE$ cat myfile2
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+student@T9:~/AJCE$ cat myfile1 > myfile2
+student@T9:~/AJCE$ cat myfile2
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat myfile2
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat myfile myfile1 > newfile
+student@T9:~/AJCE$ cat newfile
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat myfile myfile1 myfile2 > newfile
+student@T9:~/AJCE$ cat newfile
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat myfile >> myfile1
+student@T9:~/AJCE$ cat myfile1
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+student@T9:~/AJCE$ cat myfile myfile1 myfile2
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat myfile;myfile1;myfile2
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+myfile1: command not found
+myfile2: command not found
+student@T9:~/AJCE$ cat myfile; myfile1; myfile2;
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+myfile1: command not found
+myfile2: command not found
+student@T9:~/AJCE$ cat myfile;myfile1;myfile2;
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+myfile1: command not found
+myfile2: command not found
+student@T9:~/AJCE$ cat myfile; cat myfile1; cat myfile2;
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat > file3
+hgsghc
+
+cjhdj
+
+
+
+hjhjhc
+
+bjjjj
+^C
+student@T9:~/AJCE$ cat file3
+hgsghc
+
+cjhdj
+
+
+
+hjhjhc
+
+bjjjj
+student@T9:~/AJCE$ cat -s file3
+hgsghc
+
+cjhdj
+
+hjhjhc
+
+bjjjj
+student@T9:~/AJCE$ cat -T file3
+hgsghc
+
+cjhdj
+
+
+
+hjhjhc
+
+bjjjj
+ gyuhu^Ikkjkn^Ik jghhhh^Ijhjhjh
+4t6^Ihhjh8^I8888^I999
+student@T9:~/AJCE$ cat -t file3
+hgsghc
+
+cjhdj
+
+
+
+hjhjhc
+
+bjjjj
+ gyuhu^Ikkjkn^Ik jghhhh^Ijhjhjh
+4t6^Ihhjh8^I8888^I999
+student@T9:~/AJCE$ pwd cat
+/home/student/AJCE
+student@T9:~/AJCE$ man cat
+student@T9:~/AJCE$ cat -b newfile
+     1	Anju Maria Joseph
+     2	Puthiyedath
+     3	Kodenchery
+     4	WELLCOME!!!
+     5	qwerty qwerty qwerty
+     6	abcdefgh
+     7	12345
+     8	WELLCOME!!!
+     9	qwerty qwerty qwerty
+    10	abcdefgh
+    11	12345
+student@T9:~/AJCE$ tac newfile
+12345
+abcdefgh
+qwerty qwerty qwerty
+WELLCOME!!!
+12345
+abcdefgh
+qwerty qwerty qwerty
+WELLCOME!!!
+Kodenchery
+Puthiyedath
+Anju Maria Joseph
+student@T9:~/AJCE$ mancat
+mancat: command not found
+student@T9:~/AJCE$ man cat
+student@T9:~/AJCE$ cat -e myfile1
+WELLCOME!!!$
+qwerty qwerty qwerty$
+abcdefgh$
+12345$
+Anju Maria Joseph$
+Puthiyedath$
+Kodenchery$
+student@T9:~/AJCE$ cat -E myfile1
+WELLCOME!!!$
+qwerty qwerty qwerty$
+abcdefgh$
+12345$
+Anju Maria Joseph$
+Puthiyedath$
+Kodenchery$
+student@T9:~/AJCE$ cat -u myfile1
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+student@T9:~/AJCE$ cat -v myfile1
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+student@T9:~/AJCE$ cat -v newfile
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+WELLCOME!!!
+qwerty qwerty qwerty
+abcdefgh
+12345
+student@T9:~/AJCE$ cat -v file3
+hgsghc
+
+cjhdj
+
+
+
+hjhjhc
+
+bjjjj
+ gyuhu	kkjkn	k jghhhh	jhjhjh
+4t6	hhjh8	8888	999
+student@T9:~/AJCE$ cat -u file3
+hgsghc
+
+cjhdj
+
+
+
+hjhjhc
+
+bjjjj
+ gyuhu	kkjkn	k jghhhh	jhjhjh
+4t6	hhjh8	8888	999
+student@T9:~/AJCE$ mv myfile myfile2
+student@T9:~/AJCE$ cat myfile2
+Anju Maria Joseph
+Puthiyedath
+Kodenchery
+student@T9:~/AJCE$ cat > demo
+qaz
+wsx
+edc
+rty
+byj^C
+student@T9:~/AJCE$ cat demo
+qaz
+wsx
+edc
+rty
+student@T9:~/AJCE$ mv file3 MCA
+student@T9:~/AJCE$ cat > file4
+khruigji
+hfkrghju   
+itgtjitjh 
+^C
+student@T9:~/AJCE$ cat > file5
+njvhbfdhb
+hufhbh
+5668
+58965689
+9894kjik
+^C
+student@T9:~/AJCE$ mv file4 file5 MCA
+student@T9:~/AJCE$ cd MCA
+student@T9:~/AJCE/MCA$ mv Rmca Lmca
+student@T9:~/AJCE/MCA$ mv -i myfile2 demo
+mv: cannot stat 'myfile2': No such file or directory
+student@T9:~/AJCE/MCA$ cd ..
+student@T9:~/AJCE$ mv -i myfile2 demo
+mv: overwrite 'demo'? n
+student@T9:~/AJCE$ mv -i myfile2 demo
+mv: overwrite 'demo'? y
+student@T9:~/AJCE$ mkdir Btech
+student@T9:~/AJCE$ cat sample.txt
+cat: sample.txt: No such file or directory
+student@T9:~/AJCE$ cat >  sample.txt
+hyyhuhy
+huhijkj
+khhh
+^C
+student@T9:~/AJCE$ cat >  test.txt
+455565
+5656565  
+65656
+^C
+student@T9:~/AJCE$ mv *.txt Btech
+student@T9:~/AJCE$ 
+

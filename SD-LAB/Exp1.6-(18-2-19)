@@ -1,0 +1,152 @@
+student@T8:~$ cd ajce
+student@T8:~/ajce$ paste n1
+anju arun anjali
+manu mithu minnu
+amal
+demina
+fasila
+meenu
+anjana
+jeo
+
+student@T8:~/ajce$ paste n2
+kozhikode
+thrissure
+malapuram
+kochi
+kottayam
+wayanad
+thiruvalla
+alapi
+student@T8:~/ajce$ paste n3
+122
+234
+233
+121
+134
+544
+455
+566
+465
+
+student@T8:~/ajce$ paste n1 n2 n3
+anju arun anjali	kozhikode	122
+manu mithu minnu	thrissure	234
+amal	malapuram	233
+demina	kochi	121
+fasila	kottayam	134
+meenu	wayanad	544
+anjana	thiruvalla	455
+jeo	alapi	566
+		465
+		
+student@T8:~/ajce$ paste n1 n2 n3
+anju 	kozhikode	122
+amal	thrissure	234
+meenu	malapuram	233
+anjana	kochi	121
+jeo	kottayam	134
+		
+		
+student@T8:~/ajce$ paste n1 n2 n3
+anju 	kozhikode	122
+amal	thrissure	234
+meenu	malapuram	233
+anjana	thiruvalla	121
+jeo	kottayam	134
+		
+		
+student@T8:~/ajce$ paste -d "|"n1 n2
+kozhikode
+thrissure
+malapuram
+thiruvalla
+kottayam
+
+student@T8:~/ajce$ paste -d "|" n1 n2
+anju |kozhikode
+amal|thrissure
+meenu|malapuram
+anjana|thiruvalla
+jeo|kottayam
+|
+student@T8:~/ajce$ paste -d "|" n3 n1
+122|anju 
+234|amal
+233|meenu
+121|anjana
+134|jeo
+|
+|
+student@T8:~/ajce$ paste -d "|" n1 n2 n3
+anju |kozhikode|122
+amal|thrissure|234
+meenu|malapuram|233
+anjana|thiruvalla|121
+jeo|kottayam|134
+||
+||
+student@T8:~/ajce$ paste -d "|," n1 n2 n3
+anju |kozhikode,122
+amal|thrissure,234
+meenu|malapuram,233
+anjana|thiruvalla,121
+jeo|kottayam,134
+|,
+|,
+student@T8:~/ajce$ paste -s n1
+anju 	amal	meenu	anjana	jeo	
+student@T8:~/ajce$ paste -s n1 n2 n3
+anju 	amal	meenu	anjana	jeo	
+kozhikode	thrissure	malapuram	thiruvalla	kottayam	
+122	234	233	121	134		
+student@T8:~/ajce$ paste -s -d ":" n1 n2 n3
+anju :amal:meenu:anjana:jeo:
+kozhikode:thrissure:malapuram:thiruvalla:kottayam:
+122:234:233:121:134::
+student@T8:~/ajce$ paste -s -d ":" n1 
+anju :amal:meenu:anjana:jeo:
+student@T8:~/ajce$ paste -s -d ":" n1 n2
+anju :amal:meenu:anjana:jeo:
+kozhikode:thrissure:malapuram:thiruvalla:kottayam:
+student@T8:~/ajce$ cat n1 pate--
+anju 
+amal
+meenu
+anjana
+jeo
+
+cat: pate--: No such file or directory
+student@T8:~/ajce$ cat n1 paste - -
+anju 
+amal
+meenu
+anjana
+jeo
+
+cat: paste: No such file or directory
+^C      
+student@T8:~/ajce$ cat n1 | paste - -
+anju 	amal
+meenu	anjana
+jeo	
+student@T8:~/ajce$ cat n1 | paste - - -
+anju 	amal	meenu
+anjana	jeo	
+student@T8:~/ajce$ cat n1 | paste - - - -
+anju 	amal	meenu	anjana
+jeo			
+student@T8:~/ajce$ cat n1 | paste - - - - -
+anju 	amal	meenu	anjana	jeo
+				
+student@T8:~/ajce$ paste - - -<n1
+anju 	amal	meenu
+anjana	jeo	
+student@T8:~/ajce$ paste - - - -<n1
+anju 	amal	meenu	anjana
+jeo			
+student@T8:~/ajce$ paste - - - - -<n1
+anju 	amal	meenu	anjana	jeo
+				
+student@T8:~/ajce$ 
+

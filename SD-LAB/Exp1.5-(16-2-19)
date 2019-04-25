@@ -1,0 +1,248 @@
+student@T9:~$ cd ajce
+student@T9:~/ajce$ cd mca
+student@T9:~/ajce/mca$ cd rmca
+student@T9:~/ajce/mca/rmca$ cat > b1.txt
+1fg454556
+45454
+HFHF
+HFGNH
+444HF
+FFHF45
+HF5
+^C
+student@T9:~/ajce/mca/rmca$ wc b1.txt
+ 7  7 44 b1.txt
+student@T9:~/ajce/mca/rmca$ wc -l b1.txt
+7 b1.txt
+student@T9:~/ajce/mca/rmca$ wc -c b1.txt
+44 b1.txt
+student@T9:~/ajce/mca/rmca$ wc -m b1.txt
+44 b1.txt
+student@T9:~/ajce/mca/rmca$ wc -L b1.txt
+9 b1.txt
+student@T9:~/ajce/mca/rmca$ wc -w b1.txt
+7 b1.txt
+student@T9:~/ajce/mca/rmca$ cd ..
+student@T9:~/ajce/mca$ cat > a1
+qwerty
+tghjkff
+ggfgg
+fdgf4545
+787844h444x57
+555g44gf4
+g454g84xg4
+mhkjfnhjb65
+hbhgh2146
+kjhghh
+98kkg
+njfhfujhufhhhhjghurxjfhxhu
+mngjgguhuhurtu56565545454gd455s5+
+R5F9D5FS633F55F4545D5D5REGHFJNGJFF
+^C
+student@T9:~/ajce/mca$ wc b1.txt
+ 8  8 70 b1.txt
+student@T9:~/ajce/mca$ wc -l b1.txt
+8 b1.txt
+student@T9:~/ajce/mca$ wc -l a1
+14 a1
+student@T9:~/ajce/mca$ wc -c a1
+196 a1
+student@T9:~/ajce/mca$ wc -m a1
+196 a1
+student@T9:~/ajce/mca$ wc -L a1
+34 a1
+student@T9:~/ajce/mca$ wc -w a1
+14 a1
+student@T9:~/ajce/mca$ cat > k1
+1
+2
+3
+^C
+student@T9:~/ajce/mca$ wc k1
+3 3 6 k1
+student@T9:~/ajce/mca$ wc -l k1
+3 k1
+student@T9:~/ajce/mca$ wc -c k1
+6 k1
+student@T9:~/ajce/mca$ wc -b k1
+wc: invalid option -- 'b'
+Try 'wc --help' for more information.
+student@T9:~/ajce/mca$ wc -b  k1
+wc: invalid option -- 'b'
+Try 'wc --help' for more information.
+student@T9:~/ajce/mca$ wc -m  k1
+6 k1
+student@T9:~/ajce/mca$ wc -w  k1
+3 k1
+student@T9:~/ajce/mca$ cat > p1
+fdg  hh  zhzh  gt
+yhggh
+fght
+
+
+gthgtyh
+gthhht 
+gfy5r
+^C
+student@T9:~/ajce/mca$ wc p1
+ 8  9 52 p1
+student@T9:~/ajce/mca$ wc -l p1
+8 p1
+student@T9:~/ajce/mca$ wc -c p1
+52 p1
+student@T9:~/ajce/mca$ wc -w p1
+9 p1
+student@T9:~/ajce/mca$ wc -m p1
+52 p1
+student@T9:~/ajce/mca$ wc -L p1
+17 p1
+student@T9:~/ajce/mca$ wc -l p1
+8 p1
+student@T9:~/ajce/mca$ cut -c2 k1
+
+
+
+student@T9:~/ajce/mca$ cut -c2 b1.txt
+f
+d
+h
+5
+w
+7
+2
+8
+student@T9:~/ajce/mca$ cat > n2
+anju
+arun
+manu
+kichu 
+achu
+anjana
+puthiyedath
+home
+^C
+student@T9:~/ajce/mca$ cut -c2 n2
+n
+r
+a
+i
+c
+n
+u
+o
+student@T9:~/ajce/mca$ cut -c4 n2
+u
+n
+u
+h
+u
+a
+h
+e
+student@T9:~/ajce/mca$ cut -c6 n2
+
+
+
+ 
+
+a
+y
+
+student@T9:~/ajce/mca$ cut -f n2
+cut: invalid field value ‘n2’
+Try 'cut --help' for more information.
+student@T9:~/ajce/mca$ cut -f2 n2
+anju
+arun
+manu
+kichu 
+achu
+anjana
+puthiyedath
+home
+student@T9:~/ajce/mca$ cat > n3
+aaa	uuu	oooo	pppp
+111	333	555	6667	
+ajjaj	kkk	jnsjs	kokik
+^C
+student@T9:~/ajce/mca$ cut -f2 n3
+uuu
+333
+kkk
+student@T9:~/ajce/mca$ cut -f4 n3
+pppp
+6667
+kokik
+student@T9:~/ajce/mca$ cut -b4 n3
+	
+	
+a
+student@T9:~/ajce/mca$ cut -b17 n3
+p
+	
+k
+student@T9:~/ajce/mca$ cut -b4 n3
+	
+	
+a
+student@T9:~/ajce/mca$ cut -b1 n3
+a
+1
+a
+student@T9:~/ajce/mca$ man cut
+student@T9:~/ajce/mca$ cut -d2 n3
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T9:~/ajce/mca$ cut -b1 n3
+a
+1
+a
+student@T9:~/ajce/mca$ cut -d n2
+cut: the delimiter must be a single character
+Try 'cut --help' for more information.
+student@T9:~/ajce/mca$ cut -d2 n2
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T9:~/ajce/mca$ cut -c 2 3 4 n2
+cut: 3: No such file or directory
+cut: 4: No such file or directory
+n
+r
+a
+i
+c
+n
+u
+o
+student@T9:~/ajce/mca$ cut -c 2 3 4 b1.txt
+cut: 3: No such file or directory
+cut: 4: No such file or directory
+f
+d
+h
+5
+w
+7
+2
+8
+student@T9:~/ajce/mca$ cat > m1
+fftfyg	;;gh';;;jh	fggfg
+bhmmnm;;
+f;;nnk
+b;;
+^C
+student@T9:~/ajce/mca$ cut -c2 m1
+f
+h
+;
+;
+student@T9:~/ajce/mca$ cut -d2 m1
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+student@T9:~/ajce/mca$ cut -d " " -f1 m1
+fftfyg	;;gh';;;jh	fggfg
+bhmmnm;;
+f;;nnk
+b;;
+student@T9:~/ajce/mca$ 
+

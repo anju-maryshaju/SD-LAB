@@ -1,0 +1,26 @@
+
+server
+
+
+student@S8:~/socketUDP$ gedit udpserver.java
+student@S8:~/socketUDP$ javac udpserver.java
+student@S8:~/socketUDP$ java udpserver
+Client:-hii
+hello
+Client:-welcome
+Client:-hooii
+
+
+client
+
+
+student@S8:~/socketUDP$ gedit udpclient.java
+student@S8:~/socketUDP$ javac udpclient.java
+student@S8:~/socketUDP$ java udpclient
+hii
+welcome
+hooii
+
+
+
+

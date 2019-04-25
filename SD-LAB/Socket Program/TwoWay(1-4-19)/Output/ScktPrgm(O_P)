@@ -1,0 +1,31 @@
+
+android@T9:~/SocketPrgm$ javac server.java
+android@T9:~/SocketPrgm$ java server
+
+waiting for client.........
+client connected 
+client:>hiii....
+helloo.....
+client:>where
+here
+client:>bvj
+
+
+
+
+
+
+
+
+
+android@T9:~/SocketPrgm$ javac client.java
+android@T9:~/SocketPrgm$ java client
+Client connected to the server
+to Start the chat, type message and press Enter key
+hiii....
+server:>helloo.....
+where
+server:>here
+bvj
+
+
